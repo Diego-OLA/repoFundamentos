@@ -11,8 +11,11 @@ Algoritmo Division
 	Definir total Como Real
 	si  NumeroEntrada2 = 0 
 		Escribir "el segundo numero no debe ser 0"
+		
+	SiNo
+		total = NumeroEntrada1/NumeroEntrada2
+		Escribir "El resultado de la division es ",total
 	FinSi
-	total = NumeroEntrada1/NumeroEntrada2
-	Escribir "El resultado de la division es ",total
+	
 	
 FinAlgoritmo
