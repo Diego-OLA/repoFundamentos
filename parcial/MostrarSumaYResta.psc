@@ -11,4 +11,7 @@ Algoritmo MostrarSumaYResta
 	suma = numeroIngresado1+numeroIngresado2
 	resta = numeroIngresado1-numeroIngresado2
 	
+	Escribir "La suma es: ",suma
+	Escribir "La resta es: ",resta
+	
 FinAlgoritmo
