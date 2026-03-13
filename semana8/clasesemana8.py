@@ -51,7 +51,7 @@ mensaje  = "HolA que HaCE prOgramANDO O QUE hAcE"
 
 mensaje_correcto = mensaje.capitalize()
 
-print(mensaje_correcto)
+#print(mensaje_correcto)
 
 #Las flipantes aventuras del gato con bolson magico y alfredo
 titulo = "Las flipantes aventuras del gato con bolson magico y alfredo"
@@ -62,10 +62,30 @@ tituloCorrecto = titulo.title()
 
 swapCaseTitulo = tituloCorrecto.swapcase()
 
-print(swapCaseTitulo)
+#print(swapCaseTitulo)
 
 nombre = "Pepe"
 nombre2 = "Juan"
 comparar = nombre.casefold()==nombre2.casefold()
 
-print(comparar)
+#print(comparar)
+
+
+
+#metodos de validación 
+#false numeros o espacio
+
+numero = "512"
+solo_letras = "El chico del apartamento"
+coro = "piribiri_ban_ban"
+
+quieroSoloLetras = numero.isalpha() 
+print(quieroSoloLetras)
+
+
+## numeros y letras
+print("numeros y letras")
+numeros_letras = nombre + numero
+evaluarTexto = numeros_letras.isalnum()
+print(evaluarTexto)
+
