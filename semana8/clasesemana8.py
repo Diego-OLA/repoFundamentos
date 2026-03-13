@@ -40,11 +40,11 @@ de que se le ha salido, cantando, el corazón. """
 #descargarse
 
 poema_Mayusculas = poema.upper()
-print(poema_Mayusculas)
+#print(poema_Mayusculas)
 #convertir en minusculas
 #string .lower
 poema_minisculas = poema.lower()
-print(poema_minisculas)
+#print(poema_minisculas)
 
 
 mensaje  = "HolA que HaCE prOgramANDO O QUE hAcE"
@@ -53,4 +53,13 @@ mensaje_correcto = mensaje.capitalize()
 
 print(mensaje_correcto)
 
+#Las flipantes aventuras del gato con bolson magico y alfredo
+titulo = "Las flipantes aventuras del gato con bolson magico y alfredo"
+tituloCorrecto = titulo.title()
 
+
+#swapCase permite cambiar entre mayusculas y minusculas
+
+swapCaseTitulo = tituloCorrecto.swapcase()
+
+print(swapCaseTitulo)
