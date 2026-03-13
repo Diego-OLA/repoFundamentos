@@ -86,6 +86,6 @@ print(quieroSoloLetras)
 ## numeros y letras
 print("numeros y letras")
 numeros_letras = nombre + numero
-evaluarTexto = numeros_letras.isalnum()
+evaluarTexto = numeros_letras.isalnum() #muestra true si la cadena posee letras
 print(evaluarTexto)
 
