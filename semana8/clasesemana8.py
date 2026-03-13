@@ -63,3 +63,9 @@ tituloCorrecto = titulo.title()
 swapCaseTitulo = tituloCorrecto.swapcase()
 
 print(swapCaseTitulo)
+
+nombre = "Pepe"
+nombre2 = "Juan"
+comparar = nombre.casefold()==nombre2.casefold()
+
+print(comparar)
