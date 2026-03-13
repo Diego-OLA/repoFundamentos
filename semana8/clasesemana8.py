@@ -47,3 +47,10 @@ poema_minisculas = poema.lower()
 print(poema_minisculas)
 
 
+mensaje  = "HolA que HaCE prOgramANDO O QUE hAcE"
+
+mensaje_correjido = mensaje.capitalize()
+
+print(mensaje_correjido)
+
+
