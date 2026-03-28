@@ -1,15 +1,15 @@
-opcion= 3
+opcion= 2
 def convertir(opc):
     texto = "mundial 2026"
     match opc:
         case 1:
-            print( texto.upper())
+            texto.upper()
            
         case 2:
-            print(texto.lower())
+           texto.lower()
         case 3:
-            print(texto.capitalize())
+           texto.capitalize()
 
 
-convertir(opcion)
+
     
