@@ -1,0 +1,67 @@
+# ahoracado
+# 1 solicitar la palabra
+# 2 validar que no este none
+# 3 saber el tama;o de la palabra
+# 4 solicitar una letra
+# compara la letra con las pabra
+
+
+
+
+## la cantidad el elenentios que tiene un arreglo
+
+
+
+# una lista va a tener 0 o muchos elementos 
+# nuna lista puede tener objertos vacios
+
+# return list
+def solicitarPalabra():
+    palabra = input("Ingrese una palabra: ")
+    transformandoPalabra = list(palabra.lower())
+    return transformandoPalabra
+
+
+# return list del mismo tma;o que solicitarPalabra pero con None
+def ListaACompletar(listaString):
+    listaCompletar = [None] * len(listaString)
+    return listaCompletar
+
+
+# return string
+def solicitarLetra():
+    letra = input("Ingrese una letra: ").lower()
+    return letra
+
+
+def CompararListas(listaString, listaCompletar):
+    letra = solicitarLetra()
+    for i, PalabraTemporal in enumerate(listaString):
+        if letra in PalabraTemporal:
+            listaCompletar[i] = letra
+    return listaCompletar
+
+
+def DefinirIntentos(palabraAEncontrar):
+    intentos = int(input("Ingrese la cantidad de intentos: "))
+    return intentos + len(palabraAEncontrar)
+
+
+def AplicarBucle():
+
+    contador = 0
+    palabraParaAdivinar = solicitarPalabra()
+    listaCompletar = ListaACompletar(palabraParaAdivinar)
+    intentos = DefinirIntentos(palabraParaAdivinar)
+    while contador < intentos:
+        lista = CompararListas(palabraParaAdivinar, listaCompletar)
+        print(
+            "".join(
+                [sustituir if sustituir is not None else "_" for sustituir in lista]
+            )
+        )
+        contador += 1
+        print(f"Intentos restantes: {intentos - contador}")
+
+
+AplicarBucle()
