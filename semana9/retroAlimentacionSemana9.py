@@ -50,7 +50,80 @@ fmaMayusculas = Serie.upper()
 saludo(fmaMayusculas)
 
 
-FullMetalCapitalizer =  Serie.capitalize()
+FullMetalCapitalizer = fmaMayusculas.swapcase().title()
 saludo(FullMetalCapitalizer)
 
 ## deprogracion Lineal
+
+
+##Comparar cadenas de texto
+
+nombre = "Diego Omar Landaverde Ayala"
+password = "123456"
+
+if nombre == "Diego Omar Landaverde Ayala" :
+    print("Ingrese su password")
+    contra = str(input("ingrese su pass: "))
+    if password == contra:
+        print("Welcome to the Jungle")
+
+
+
+comparar1 = "Diego"
+comparar2 = "Diego"
+# Usaremos para comparar y pasar a minusculas
+variableTemporal  = comparar1.casefold()
+print(variableTemporal)
+
+#comparar = comparar1.casefold() == comparar2.casefold()
+#print(comparar)
+
+##casefold nos dara true unicamente si los elementos son identicos 
+
+##isalfa() parar comparar numeros o signos especiales
+
+clasicas2005 = "Gasolina 2025"
+
+compararIsAlpha = clasicas2005.isalpha()
+#print(compararIsAlpha) #da true cuando solo sean letras 
+
+#Solo numero   isAlnum()
+letraCancion = "Lo que paso paso entre tu y yo"
+decada = "10"
+
+ejemplo  = letraCancion.isalnum()
+#print(ejemplo)
+ejemplo = decada.isalnum() #da true cuando solo haya numero en el string de la variable
+#print(ejemplo)
+
+
+
+comprobarDecadas = decada.isdigit()
+
+#isnumeric() sirve para evaluar cadenas de texto, muestra true si en una cadena solo hay numeros
+
+
+jugadores = "Cristiano Leo song"
+mayus = jugadores.isupper();
+print(mayus)
+
+
+controlEspacio = Serie.isspace()
+print(controlEspacio)
+
+
+#metodos de busqueda
+tema = "En el bosque de china, la chinita se perdio "
+temaf = tema.find("bosque")
+print(temaf)
+
+#rfind() permite hacer busqueda en caracteres empezando de derecha
+temaf = tema.upper().rfind("BOSQUE");
+
+print(temaf)
+
+contador = tema.count("se")
+contador = tema.startswith("En")
+contador = tema.endswith("dio ")
+temaModificado = tema.replace(" ","-")
+print(temaModificado)
